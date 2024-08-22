@@ -1,0 +1,31 @@
+#budget > .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.budgets-table {
+    /* table-layout: fixed; */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.budgets-table th,td {
+    padding-block: 1.25rem;
+    text-align: center;
+}
+
+.budgets-table tr {
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+
+.budgets-table tbody tr:hover {
+    background-color: rgba(0,0,0,0.025);
+}
+
+.budgets-table .category-column span {
+    padding: 0.33rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color-100);
+}

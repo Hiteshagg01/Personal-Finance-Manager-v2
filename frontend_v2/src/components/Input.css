@@ -1,0 +1,47 @@
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.input-group > input {
+    width: 100%;
+    padding: 1.25rem 0.5rem 0.25rem;
+    border-radius: 0.375rem;
+    border: 0;
+    outline: 2px solid var(--color-silver);
+    background-color: var(--color-off-white);
+
+    transition: 0.3s ease;
+}
+
+.input-group > label {
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.75rem 0.5rem;
+    color: var(--color-muted);
+
+    transition: 0.3s ease;
+}
+
+.input-group > input:not(:placeholder-shown):valid {
+    outline-color: var(--color-success);
+}
+
+.input-group > input:focus ~ label,
+.input-group > input:not(:placeholder-shown) ~ label {
+    font-size: 0.75rem;
+    translate: 0 -0.5rem;
+}
+
+.input-group > input:not(:placeholder-shown):invalid,
+.input-group > input.invalid:not(:placeholder-shown) {
+    outline-color: var(--color-danger);
+}
+
+.input-group >input:focus,
+.input-group > input:focus:invalid,
+.input-group > input.invalid:focus {
+    outline-color: var(--color-teal-900);
+}

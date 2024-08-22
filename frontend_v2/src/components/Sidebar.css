@@ -1,0 +1,164 @@
+.sidebar {
+    background-color: var(--color-off-white);
+    width: 250px;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    border-right: 2px solid var(--color-silver);
+
+    transition: all 0.3s ease;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-inline: 1.25rem;
+    height: 5rem;
+}
+
+.sidebar-toggle {
+    border: 0;
+    background-color: transparent;
+    padding-inline: 0.25rem;
+}
+
+.sidebar-nav {
+    padding: 1rem;
+}
+
+.sidebar-nav > small {
+    color: var(--color-muted);
+    display: block;
+    text-align: start;
+}
+
+.sidebar-menu {
+    list-style: none;
+}
+
+.sidebar-links {
+    text-decoration: none;
+    color: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+    position: relative;
+
+    transition: all 0.3s ease;
+}
+
+.sidebar-links:hover {
+    background-color: var(--color-hover-bg);
+}
+
+.sidebar-links.active {
+    padding-left: 1rem;
+}
+
+.sidebar-links.active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0.5rem;
+    border-radius: 0 100vw 100vw 0;
+    background-color: var(--color-primary-light);
+}
+/* 
+.sidebar-links.active::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    height: 1rem;
+    aspect-ratio: 1/1;
+    background-color: #fff;
+
+    rotate: 45deg;
+} */
+
+.sidebar-links > span {
+    flex: 20%;
+    text-align: center;
+}
+
+.sidebar-links > p {
+    flex: 80%;
+    text-align: start;
+}
+
+.sidebar.closed {
+    width: 4rem;
+
+    .sidebar-links p {
+        position: absolute;
+        left: -100vw;
+    }
+
+    .sidebar-header {
+        padding: 0.5rem;
+    }
+
+    .sidebar-header img {
+        width: 2rem;
+    }
+
+    .sidebar-nav {
+        padding-inline: 0;
+    }
+
+    .sidebar-nav > small {
+        text-align: center;
+    }
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 5rem;
+
+    padding: 1.25rem var(--gap);
+}
+
+.main-header p {
+    color: var(--color-muted);
+    text-transform: capitalize;
+}
+
+.profile-btn {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.logout-btn {
+    color: var(--color-danger-hover);
+
+    &:hover {
+        color: var(--color-danger);
+    }
+}
+
+.main-content {
+    padding: 1.25rem var(--gap);
+}
+
+@media screen and (max-width: 768px) {
+    .profile-btn {
+        width: 2rem;
+    }
+}

@@ -1,0 +1,38 @@
+#navbar {
+  min-height: 4.5rem;
+
+  padding-inline: var(--gap);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navbar-link {
+  position: relative;
+}
+
+.navbar-link a {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+
+  transition: border 0.3s ease;
+}
+
+.navbar-link a:hover,
+.navbar-link a:focus {
+  outline: none;
+  border-bottom-color: var(--black-color);
+}

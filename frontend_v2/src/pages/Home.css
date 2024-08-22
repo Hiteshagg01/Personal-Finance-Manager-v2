@@ -1,0 +1,237 @@
+#hero {
+    overflow: hidden;
+    min-height: calc(100dvh - 4.5rem);
+}
+
+.hero-row {
+    display: grid;
+    grid-template-columns: 4.5fr 5.5fr;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    p {
+        max-width: 40ch;
+        font-size: 1.125rem;
+        color: var(--color-muted);
+    }
+}
+
+.hero-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        border-radius: 1rem;
+        box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
+            0 -6px 16px -6px #00000008;
+    }
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1rem;
+}
+
+#features {
+    overflow: hidden;
+    background-color: var(--color-teal-100);
+    padding-block: 8rem;
+}
+.features-row {
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+}
+
+.features-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        border-radius: 1rem;
+        box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
+            0 -6px 16px -6px #00000008;
+    }
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.features-content > small {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    background-color: var(--color-orange-100);
+}
+
+.features-content > h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.features-content > p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+}
+
+.features-list {
+    list-style: none;
+    color: var(--color-muted);
+}
+
+.features-list > li {
+    margin-block: 0.25rem;
+
+    &::before {
+        content: "✔";
+        position: relative;
+        color: var(--color-orange-900);
+        margin-right: 0.25rem;
+    }
+}
+
+#benefits {
+    overflow: hidden;
+    padding-block: 8rem;
+}
+
+.benefits-row {
+    display: grid;
+    grid-template-columns: 5.5fr 4.5fr;
+}
+
+.benefits-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.benefits-content > small {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.375rem;
+    background-color: var(--color-orange-100);
+}
+
+.benefits-content > h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.benefits-content > p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+}
+
+.benefits-list {
+    list-style: none;
+    color: var(--color-muted);
+}
+
+.benefits-list > li {
+    margin-block: 0.25rem;
+
+    &::before {
+        content: "✔";
+        position: relative;
+        color: var(--color-orange-900);
+        margin-right: 0.25rem;
+    }
+}
+
+.benefits-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        border-radius: 1rem;
+        box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d,
+            0 -6px 16px -6px #00000008;
+    }
+}
+
+#cta {
+    overflow: hidden;
+    background-color: var(--color-teal-100);
+    padding-block: 4rem;
+}
+
+.cta-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.cta-row > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.cta-row > p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+    text-align: center;
+
+    color: var(--color-muted);
+}
+
+#contact {
+    overflow: hidden;
+    padding-block: 4rem;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-row > h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.contact-row > p {
+    font-size: 1.125rem;
+    max-width: 50ch;
+    text-align: center;
+
+    color: var(--color-muted);
+}
+
+.contact-row > form {
+    width: min(400px, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,0 +1,85 @@
+/* Poppins Google Font Import  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color-900: #2ec4b6;
+  --primary-color-100: #cbf3f0;
+
+  --secondary-color-900: #ff9f1c;
+  --secondary-color-100: #ffbf69;
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+
+  --charcoal-color: #36454f;
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat" sans-serif;
+
+  --gap: clamp(1rem, 6vw, 3rem);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+html {
+  font-family: var(--primary-font);
+}
+
+body {
+  min-height: 100dvh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+p {
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  isolation: isolate;
+}

@@ -1,0 +1,36 @@
+#footer {
+  padding: 1.5rem var(--gap);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid #eeeeee;
+}
+
+#footer > p {
+  color: var(--charcoal-color);
+}
+
+#footer > nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#footer > nav > a {
+  cursor: pointer;
+  text-transform: capitalize;
+  color: inherit;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+
+  transition: border 0.3s ease;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-bottom-color: var(--black-color);
+  }
+}

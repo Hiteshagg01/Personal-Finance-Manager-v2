@@ -1,0 +1,46 @@
+#login {
+  min-height: 100dvh;
+  padding: 4rem var(--gap);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.login-img > h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.login-img > p {
+  font-size: 1.125rem;
+  color: var(--charcoal-color);
+}
+
+.login-form {
+  width: min(440px, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#login > p {
+  margin-block: 1rem;
+}
+
+.google-auth {
+  background-color: #ea4335;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 100vw;
+}

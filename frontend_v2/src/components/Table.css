@@ -1,0 +1,26 @@
+table.table {
+    margin-block: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    th,td {
+        padding: 0.75rem 1rem;
+        text-align: start;
+    }
+
+    th {
+        background-color: var(--color-teal-100);
+        cursor: pointer;
+    }
+
+    tbody tr:hover {
+        background-color: var(--color-hover-bg);
+    }
+}
+
+
